@@ -45,7 +45,15 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       />
 
       <label>Color</label>
-      <input name="color" value={formData.color} onChange={handleChange} required />
+      <input 
+        name="color" 
+        value={formData.color} 
+        onChange={handleChange} 
+        placeholder="e.g. blue, salmon"
+        pattern="^[a-zA-Z]+$" 
+        title="Please enter a color name using only letters (no numbers or #)"
+        required 
+      />
 
       <label>Description</label>
       <textarea
