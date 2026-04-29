@@ -49,7 +49,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         name="color" 
         value={formData.color} 
         onChange={handleChange} 
-        placeholder="e.g. blue, salmon"
+        placeholder="e.g. black, gray"
         pattern="^[a-zA-Z]+$" 
         title="Please enter a color name using only letters (no numbers or #)"
         required 
